@@ -4,6 +4,18 @@
 }
 
 
+/* General */
+
+:root {
+    --main-txt: #FFF;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
 /* Header */
 
 header {
@@ -11,4 +23,13 @@ header {
     height: 100vh;
     background-position: center;
     background-size: cover;
+    color: var(--main-txt);
+}
+
+header h1 {
+    font-size: 4.5rem;
+}
+
+header p {
+    font-size: 3rem;
 }
