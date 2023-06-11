@@ -9,6 +9,7 @@
 :root {
     --main-txt: rgb(255, 255, 255);
     --bs-emphasis-color-rgb: 255,255,255;
+    --body-padding: 3rem;
 }
 
 html {
@@ -19,14 +20,11 @@ html {
 
 /* Navbar */
 
-/* nav .container-fluid a,
-nav .container-fluid .navbar-toggler i {
-    color: var(--main-txt);
-} */
-
-/* nav .container-fluid .active.nav-link {
-    color: var(--main-txt);
-} */
+nav.navbar {
+    --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    padding-left: var(--body-padding);
+    padding-right: var(--body-padding);
+}
 
 /* End of Navbar */
 
@@ -39,6 +37,9 @@ header {
     background-position: center;
     background-size: cover;
     color: var(--main-txt);
+    padding: 0rem, var(--body-padding);
+    padding-left: var(--body-padding);
+    padding-right: var(--body-padding);
 }
 
 header h1 {
