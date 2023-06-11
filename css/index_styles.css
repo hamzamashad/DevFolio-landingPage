@@ -9,7 +9,7 @@
 :root {
     --main-txt: rgb(255, 255, 255);
     --bs-emphasis-color-rgb: 255,255,255;
-    --body-padding: 3rem;
+    --body-padding: 6rem;
 }
 
 html {
@@ -49,3 +49,5 @@ header h1 {
 header p {
     font-size: 3rem;
 }
+
+/* End of Header */
