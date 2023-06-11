@@ -7,13 +7,28 @@
 /* General */
 
 :root {
-    --main-txt: #FFF;
+    --main-txt: rgb(255, 255, 255);
+    --bs-emphasis-color-rgb: 255,255,255;
 }
 
 html {
     font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
+/* Navbar */
+
+/* nav .container-fluid a,
+nav .container-fluid .navbar-toggler i {
+    color: var(--main-txt);
+} */
+
+/* nav .container-fluid .active.nav-link {
+    color: var(--main-txt);
+} */
+
+/* End of Navbar */
 
 
 /* Header */
