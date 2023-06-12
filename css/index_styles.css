@@ -8,6 +8,7 @@
 
 :root {
     --main-txt: rgb(255, 255, 255);
+    --faded-txt: #4E4E4E;
     --bs-emphasis-color-rgb: 255,255,255;
     --body-padding: 6rem;
 }
@@ -19,6 +20,10 @@ html {
 
 body {
     background-color: #f5f5f5;
+}
+
+section {
+    padding: 4rem 0;
 }
 
 li {
@@ -54,8 +59,44 @@ header h1 {
     font-size: 4.5rem;
 }
 
-header p {
+header p::before {
+    content: "Developer";
     font-size: 3rem;
+    animation: typing 4s infinite alternate;
+}
+
+header p::after {
+    content: " ";
+    font-size: 2.5rem;
+    border-right: var(--main-txt) 4px solid;
+}
+
+p {
+    margin: 0;
+}
+
+@keyframes typing {
+    0% {content: "DEVELOPER";}
+    5% {content: "DEVELOPE"}
+    10% {content: "DEVELOP"}
+    15% {content: "DEVELO"}
+    20% {content: "DEVEL"}
+    25% {content: "DEVE"}
+    30% {content: "DEV"}
+    35% {content: "DE"}
+    40% {content: "D"}
+    45% {content: "FR"}
+    50% {content: "FRE"}
+    55% {content: "FREE"}
+    60% {content: "FREEL"}
+    65% {content: "FREELA"}
+    70% {content: "FREELAN"}
+    75% {content: "FREELANC"}
+    80% {content: "FREELANCE"}
+    85% {content: "FREELANCER"}
+    90% {content: ""}
+    95% {content: ""}
+    100% {content: ""}
 }
 
 /* End of Header */
@@ -63,6 +104,31 @@ header p {
 
 /* About */
 
-section.about .container-sm {
-    background-color: aqua;
+section.about .container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+section.about .dev-progress p {
+    margin-top: 1rem;
+}
+
+section.about .dev-about .card-title {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+section.about .dev-about .card-title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 1rem;
+    width: 6.4rem;
+    border-bottom: 0.2rem #0078FF solid;
+
+}
+
+section.about .dev-about .card-text {
+    margin: 1rem 0;
 }
