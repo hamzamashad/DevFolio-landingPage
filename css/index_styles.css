@@ -17,6 +17,14 @@ html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+    background-color: #f5f5f5;
+}
+
+li {
+    list-style: none;
+}
+
 
 /* Navbar */
 
@@ -51,3 +59,10 @@ header p {
 }
 
 /* End of Header */
+
+
+/* About */
+
+section.about .container-sm {
+    background-color: aqua;
+}
