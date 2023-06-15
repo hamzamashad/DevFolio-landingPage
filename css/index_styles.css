@@ -139,14 +139,10 @@ section.about .dev-about .card-text {
 
 /* Services */
 
-.services .container {
-    background-color: tomato;
-}
-
-.services .container .row {
-    background-color: black;
-}
-
 .services .container .row .col-md-4 div {
     background-color: white;
+    padding: 2.5rem 1.3rem;
+    border-radius: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
 }
