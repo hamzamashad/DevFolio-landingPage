@@ -12,6 +12,7 @@
     --faded-txt: #4E4E4E;
     --bs-emphasis-color-rgb: 255,255,255;
     --body-padding: 6rem;
+    --sig-rgb: 0, 120, 255;
 }
 
 html {
@@ -126,7 +127,7 @@ section.about .dev-about .card-title::after {
     position: absolute;
     bottom: 1rem;
     width: 6.4rem;
-    border-bottom: 0.2rem #0078FF solid;
+    border-bottom: 0.2rem rgb(var(--sig-rgb)) solid;
 
 }
 
@@ -139,10 +140,26 @@ section.about .dev-about .card-text {
 
 /* Services */
 
-.services .container .row .col-md-4 div {
+.services .container .services-boxes .service-box {
     background-color: white;
     padding: 2.5rem 1.3rem;
     border-radius: 3rem;
     margin-bottom: 3rem;
     text-align: center;
+}
+
+.services .container .services-boxes .service-box .service-icon {
+    width: 7rem;
+    height: 7rem;
+    box-shadow: 0 0 0 10px rgb(var(--sig-rgb));
+    font-size: 2rem;
+    color: black;
+    transition: 0.3s;
+}
+
+.services .container .services-boxes .service-box:hover .service-icon {
+    color: white;
+    background-color: rgb(var(--sig-rgb));
+    box-shadow: 0 0 0 10px rgba(var(--sig-rgb),0.3);;
+
 }
