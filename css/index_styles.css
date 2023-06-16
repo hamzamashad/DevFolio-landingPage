@@ -163,3 +163,26 @@ section.about .dev-about .card-text {
     box-shadow: 0 0 0 10px rgba(var(--sig-rgb),0.3);;
 
 }
+
+/* End of Services */
+
+
+/* Achievements */
+
+.achievements {
+    background-image: linear-gradient(rgba(var(--sig-rgb), 0.7),rgba(var(--sig-rgb), 0.7)), url(../images/post-3.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.achievements .achievement .achievement-icon {
+    width: 4rem;
+    height: 4rem;
+    box-shadow: 0 0 0 10px #CDE1F8;
+    font-size: 1.75rem;
+    color: #CDE1F8;
+}
+
+.achievements .achievement-dets {
+    color: #CDE1F8;
+}
